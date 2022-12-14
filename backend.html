@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bnackend data form</title>
     <style>
-        h1{
+        h1 {
             color: rgba(0, 102, 255, 0.877);
         }
-        body{
+
+        body {
             display: flex;
             justify-content: space-around;
             background-color: antiquewhite;
         }
-        #product_details{
+
+        #product_details {
             display: grid;
-            grid-template-columns: repeat(1,1fr);
+            grid-template-columns: repeat(1, 1fr);
             gap: 20px;
         }
-        #product_details>input{
+
+        #product_details>input {
             width: 100%;
             height: 40px;
             font-size: 20px;
         }
-        #product_details>button{
+
+        #product_details>button {
             height: 40px;
             border-radius: 5px;
             background-color: green;
@@ -33,24 +38,28 @@
             border-color: green;
 
         }
-        #Delete{
+
+        #Delete {
             display: grid;
-            grid-template-columns: repeat(1,1fr);
+            grid-template-columns: repeat(1, 1fr);
             gap: 20px;
-        }  
-        #update{
-            display: grid;
-            grid-template-columns: repeat(1,1fr);
-            gap: 20px;
-        
         }
-        #update>input{
+
+        #update {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+
+        }
+
+        #update>input {
             width: 100%;
             height: 40px;
             font-size: 20px;
             margin-top: -130px;
         }
-        #update>button{
+
+        #update>button {
             margin-top: -220px;
             height: 40px;
             font-size: 20px;
@@ -59,13 +68,15 @@
             border-color: teal;
             color: black;
         }
-        #Delete>input{
+
+        #Delete>input {
             width: 100%;
             height: 40px;
-            font-size: 20px; 
+            font-size: 20px;
             margin-top: -130px;
         }
-        #Delete>button{
+
+        #Delete>button {
             margin-top: -220px;
             height: 40px;
             background-color: red;
@@ -76,7 +87,10 @@
 
         }
     </style>
+
+
 </head>
+
 <body>
     <div id="product_details">
         <h1>Product Details</h1>
@@ -94,11 +108,16 @@
         <input id="new_price" type="number" placeholder="Enter new price">
         <button id="update_price">Update Price</button>
     </div>
+
+
     <div id="Delete">
-<h1>Delete Product</h1>
-<input type="text" name="" id="delete_product" placeholder="Enter Id">
-<button id="delete_product">Delete Product</button>
+        <h1>Delete Product</h1>
+        <input type="number" name="" id="product_id" placeholder="Enter Id">
+        <button id="delete_product">Delete Product</button>
     </div>
+
+
 </body>
+
 </html>
 <script src="backend.js"></script>
