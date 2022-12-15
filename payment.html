@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #cart>div>img{
+            width: 10%;
+        }
+        #cart>div{
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-around;
+            /* border: 1px solid black; */
+        }
+
+        #cart{
+            width: 70%;
+            margin: auto;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    
+<div id="cart">
+
+
+</div>
+
+</body>
+</html>
+
+
+<script>
+
+let arr=JSON.parse(localStorage.getItem("cartItems"))||[];
+
+
+const display=(data)=>{
+
+let cart=document.querySelector("#cart");
+cart.innerHTML=null;
+
+
+data.forEach(el => {
+    let card=document.createElement("div");
+    let hr=document.createElement("hr")
+    let image=document.createElement("img");
+    image.src=el.image;
+    
+    let title=document.createElement("p");
+    title.innerText=el.title;
+   
+    let price=document.createElement("h3");
+    price.innerText=Number(el.price);
+let remove=document.createElement("button");
+remove.innerText="Remove"
+   
+    card.append(image,title,price,remove);
+    cart.append(card,hr)
+});
+
+
+
+
+}
+
+display(arr)
+
+
+
+
+</script>
