@@ -1,0 +1,51 @@
+*{
+    font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
+
+}
+body{
+    display: flex;
+}
+#lhsProduct{
+    border: 2px solid black;
+}
+#rhsProduct{
+    border: 2px solid red;
+    width: 100%;
+}
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.sliderProduct{
+    max-width:1500px;
+    position: relative;
+}
+
+.sliderProduct .carousel{
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    
+} 
+
+/* .sliderProduct .carousel::-webkit-scrollbar{
+    display: none;
+    color: gray;
+} */
+
+.carousel img{
+    height: 250px;
+    object-fit: cover;
+}
+.divs{
+    margin-left: 14px;
+}
+
+.carousel:first-child {
+    padding-left: 50px;
+}
