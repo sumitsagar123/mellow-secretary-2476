@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/productPage.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="lhsProduct">
+        <a href="./cart.html">Cart</a>
         <h4>THE MEN'S SHOP</h4>
         <p>All Men's Body Care</p>
         <p>Body Wash & Shower Gel</p>
@@ -51,17 +53,17 @@
                 <h2>Men's Fragrance, Body Care & More</h2>
             </div>
             <div id="filterProduct">
-                <select name="" id="">
+                <h3>Filter By:</h3>
+                <select name="" id="type">
                     <option value="">PRODUCT TYPE</option>
                 </select>
-                <select name="" id="">
+                <select name="" id="name">
                     <option value="">FRAGRANCE NAME</option>
                 </select>
-                <select name="" id="">
-                    <option value="">FRAGRANCE CATEGORY</option>
-                </select>
-                <select name="" id="">
+                <select name="" id="sortby">
                     <option value="">SORT BY</option>
+                    <option id="ltoh" value="lth">Price low to High</option>
+                    <option id="htol" value="htl">Price High to low</option>
                 </select>
         </div>
         <div id="productContainer">

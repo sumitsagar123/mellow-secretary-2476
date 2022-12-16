@@ -4,7 +4,7 @@ let products = [
         title: "Black Tie",
         price: 7.50,
         rating: 4.5,
-        type: "wallflowers Fragrance Refill",
+        type: "Black wallflowers Fragrance Refill",
 
     },
     {
@@ -52,7 +52,7 @@ let products = [
     },
     {
         image:`https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwcff163db/crop/026358678_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_`,
-        title: "Mahogany Teakwood Increased Intensity",
+        title: "Mahogany Teakwood ",
         price: 16.50,
         rating: 5.0,
         type: "Wallflowers Fragrance Refill",
@@ -92,15 +92,16 @@ let products = [
         rating: 4.8,
         type: "3-in-1 hair, Face & Body Wash",
     },
-]
+];
 
-const renderDom =  () => {
+const renderDom =  (datas) => {
 
 // console.log('slider');
 let container = document.getElementById("productContainer");
+    container.innerHTML = null;
 let data =JSON.parse(localStorage.getItem("Productcart")) || [];
     // console.log(container);
-    products.forEach((el) => {
+    datas.forEach((el) => {
 
         let div = document.createElement("div");
             div.setAttribute("class", "productss");
@@ -117,14 +118,16 @@ let data =JSON.parse(localStorage.getItem("Productcart")) || [];
             type.appendChild(typeNode);
 
         let price = document.createElement("h3");
-        let priceNode = document.createTextNode(`$ ${el.price}`);
+        let priceNode = document.createTextNode(`$ ${Number(el.price)}`);
             price.appendChild(priceNode);
    
         let rating = document.createElement("p");
-        let ratingNode = document.createTextNode(`Rating: ${el.rating}`);
+        let ratingNode = document.createTextNode(`Rating: ${Number(el.rating)}`);
             rating.appendChild(ratingNode);
+            
 
             let button = document.createElement("button");
+                button.setAttribute("id","addtocart");
                 button.innerText= "Add to Cart";
                 button.onclick = () => {
                     // addToCart(el);
@@ -136,6 +139,51 @@ let data =JSON.parse(localStorage.getItem("Productcart")) || [];
         div.append(img,title,type,price,rating,button);
         container.append(div);
     });
-    
 }; 
-renderDom();
+renderDom(products);
+
+
+const filter = () => {
+    let type = document.getElementById("type");
+    let name = document.getElementById("name");
+    let sortby = document.getElementById("sortby");
+
+    products.forEach((el) => {
+        let otp_type = document.createElement("option");
+            otp_type.innerHTML = el.type;
+            type.append(otp_type);
+
+        let otm_name = document.createElement("option");
+            otm_name.innerHTML = el.title;
+            name.append(otm_name);
+
+    });
+
+    type.onchange = () => {
+        let p = products.filter((el)=>{
+            return el.type === type.value;
+        });
+        renderDom(p);
+    };
+
+    name.onchange = () => {
+        let p = products.filter((el)=>{
+            return el.title === name.value;
+        });
+        renderDom(p);
+    };
+
+    sortby.onchange = () => {
+        let s;
+        if(sortby.value === "lth"){
+            //console.log("Sort")
+              s = products.sort((q,w)=>q.price-w.price);
+        }else{
+             s = products.sort((q,w)=>w.price-q.price);
+        }
+        renderDom(s);
+    };
+
+};
+
+filter();
