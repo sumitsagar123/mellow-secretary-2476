@@ -1,16 +1,16 @@
 *{
     font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
-
 }
 body{
     display: flex;
 }
 #lhsProduct{
     border: 2px solid black;
+    min-width: 20%;
 }
 #rhsProduct{
     border: 2px solid red;
-    width: 100%;
+    width: 80%;
 }
 .carousel{
     display: flex;
@@ -20,7 +20,7 @@ body{
     
 }
 .sliderProduct{
-    max-width:1500px;
+    max-width:100%;
     position: relative;
 }
 
@@ -47,5 +47,24 @@ body{
 }
 
 .carousel:first-child {
-    padding-left: 50px;
+    padding-left: 350px;
+}
+
+#productContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+}
+.productss{
+    text-align: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    height: 500px;
+    padding: 35px 0px 0px 0px;
+}
+.productss img{
+width: 50%;
+height: 60%;
+border: 0px solid palegreen;
+
 }
