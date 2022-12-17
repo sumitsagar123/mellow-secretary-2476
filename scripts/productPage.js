@@ -1,5 +1,6 @@
 let products = [
     {
+        id:1,
         image:`https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw68829434/crop/026587279_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_`,
         title: "Black Tie",
         price: 7.50,
@@ -8,6 +9,7 @@ let products = [
 
     },
     {
+        id:2,
         image:`https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc1518184/crop/026438827_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_`,
         title: "Black Tie",
         desc: "Wallflowers Fragrance Refill",
@@ -16,6 +18,7 @@ let products = [
         type: "wallflowers Fragrance Refill",
     },
     {
+        id:3,
         image:`https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdfe0df3d/crop/026437376_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_`,
         title: "Mahogany Teakwood",
         price: 15.50,
@@ -23,6 +26,7 @@ let products = [
         type: "Single Wick Candle",
     },
     {
+        id:4,
         image:`https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw788dbf70/crop/026501180_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_`,
         title: "Birch & Ecalyptus",
         price: 16.50,
@@ -30,6 +34,7 @@ let products = [
         type: "Unlimited Hydration Body Cream",
     },
     {
+        id:5,
         image:`https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe8387708/crop/026534930_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_`,
         title: "Flannel",
         price: 8.50,
@@ -37,6 +42,7 @@ let products = [
         type: "Cocentrated Room Spray",
     },
     {
+        id:6,
         image:`https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4a25f053/crop/026584954_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_`,
         title: "Flannel",
         price: 16.95,
@@ -44,6 +50,7 @@ let products = [
         type: "3-Wick Candle",
     },
     {
+        id:7,
         image:`https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwef08bb2c/crop/026552804_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_`,
         title: "Bpurbon",
         price: 16.50,
@@ -51,6 +58,7 @@ let products = [
         type: "Ultimate Hydration Body Cream",
     },
     {
+        id:8,
         image:`https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwcff163db/crop/026358678_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_`,
         title: "Mahogany Teakwood ",
         price: 16.50,
@@ -58,6 +66,7 @@ let products = [
         type: "Wallflowers Fragrance Refill",
     },
     {
+        id:9,
         image:`https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8c66aeff/crop/026552809_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_`,
         title: "Whiskey Reserve",
         price: 14.50,
@@ -65,6 +74,7 @@ let products = [
         type: "Daily Nourishing Body Lotion",
     },
     {
+        id:10,
         image:`https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw41ccd312/crop/026438828_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_`,
         title: "Vintage",
         price: 7.50,
@@ -72,6 +82,7 @@ let products = [
         type: "Gentle Foaming Hand Soap",
     },
     {
+        id:11,
         image:`https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdfe3b194/crop/026551686_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_`,
         title: "Smoked Old Fashioned",
         price: 14.50,
@@ -79,6 +90,7 @@ let products = [
         type: "Body Spray",
     },
     {
+        id:12,
         image:`https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd11e9755/crop/026466941_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_`,
         title: "Freshwater",
         price: 7.50,
@@ -86,6 +98,7 @@ let products = [
         type: "Wallflowers Fragrance Refill",
     },
     {
+        id:13,
         image:`https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc05d9d02/crop/026551691_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_`,
         title: "Whiskey Reserve",
         price: 15.50,
@@ -125,7 +138,7 @@ let data =JSON.parse(localStorage.getItem("Productcart")) || [];
         let ratingNode = document.createTextNode(`Rating: ${Number(el.rating)}`);
             rating.appendChild(ratingNode);
             
-
+        
             let button = document.createElement("button");
                 button.setAttribute("id","addtocart");
                 button.innerText= "Add to Cart";
@@ -138,7 +151,10 @@ let data =JSON.parse(localStorage.getItem("Productcart")) || [];
 
         div.append(img,title,type,price,rating,button);
         container.append(div);
+        console.log(el.id);
     });
+
+    
 }; 
 renderDom(products);
 

@@ -1,0 +1,86 @@
+*{
+    font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
+}
+#titles_div{
+    width: 70%;
+    margin: auto;
+}
+#titles_div h4{
+    display: flex;
+    background-color: #e6f5ff;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+#topline{
+    display: flex;
+    column-gap: 550px;
+    padding-left: 250px;
+    background-color: #f2f2f2;
+}
+
+#final_cart{
+    border: 0px solid red;
+    margin: auto;
+    width: 70%;
+}
+
+.cartproduct{
+    border: 0px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+}
+
+.cartproduct img {
+    width: 100px;
+}
+
+.cartproduct button{
+    height: 30px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+#checkout{
+    justify-content: space-around;
+    border: 2px solid black;
+    display: flex;
+}
+
+#checkoutdiv{
+    width: 70%;
+    margin: auto;
+}
+
+#payment_btns{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    column-gap: 20px;
+}
+
+#chkbtn{
+width: 200px;
+height: 40px;
+background-color: #008527;
+border: none;
+color: white;
+font-size: 16px;
+font-weight: 600;
+cursor: pointer;
+font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;;
+}
+#paypal{
+    width: 200px;
+    height: 40px;
+    background-color: #ffc439;
+    border: none;
+    cursor: pointer;
+}
+#paypal img{
+
+    width: 50%;
+}

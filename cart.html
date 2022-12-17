@@ -5,9 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/cart.css">
 </head>
 <body>
+    <div id="titles_div">
+        <h3>ITEMS IN SHOPPING BAG</h3>
+        <h4>Need it ASAP? Choose Pick Up In Store, and we'll typically have it ready for pickup within 4 hours.</h4>
+    </div>
     
+    <div id="final_cart">
+        <div id="topline">
+            <h3>ITEM</h3>
+            <h3>PRICE</h3>
+        </div>
+    </div>
+    <div id="checkoutdiv">
+        <div id="checkout">
+            <div id="checkouttitles">
+                <h4>MERCHANDISE SUBTOTAL</h4>
+                <h4>ESTIMATED SHIPPING & HANDLING - Standard</h4>
+                <h4>SALES TAX</h4>
+                <hr>
+                <h3>ORDER TOTAL (USD)</h3>
+            </div>
+            <div id="checkouttotal">
+                <h3 id="subtotal"></h3>
+                <h3 id="shipping"></h3>
+                <h3 id="tax"></h3>
+                <hr>
+                <h3 id="checkouttotalss"></h3>
+                </div>
+        </div>
+        <div id="payment_btns">
+            <button id="paypal"><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png" alt="paypal"></button>
+            <button id="chkbtn">CHECKOUT</button>
+        </div>
+    </div>
+   
+
 </body>
 </html>
 <script src="./scripts/cart.js"></script>
