@@ -60,6 +60,7 @@ let res= await fetch(url,{
 })
 res=await res.json();
 console.log(res)
+alert("Product is added to DataBase")
 
 }catch(error){
 alert("Bad Request")
@@ -94,6 +95,7 @@ try{
     })
     res=await res.json();
     console.log(res)
+    alert("New Price updated")
     
     }catch(error){
     alert("Bad Request")
@@ -119,7 +121,7 @@ try{
     })
     res=await res.json();
     console.log(res)
-    
+    alert("Product is deleted")
     }catch(error){
     alert("Bad Request")
     }

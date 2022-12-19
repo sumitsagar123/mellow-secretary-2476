@@ -6,232 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        #navbar {
-            width: 100%;
-            height: 200px;
-            border: 1px solid black;
-            position: sticky;
-            top: 0px;
-            background: white;
-        }
-
-        #motto {
-            width: 80%;
-            height: 30px;
-            border: 1px solid blue;
-            margin: auto;
-            margin-top: 50px;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            display: flex;
-            align-items: center;
-            background-color: #025394;
-            color: white;
-        }
-
-        #motto>p {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: small;
-        }
-
-        #components {
-            width: 80%;
-            margin: auto;
-            height: auto;
-            /* border: 2px solid grey; */
-            margin-top: 10px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-
-        #cartbar {
-            width: 57%;
-            /* border: 1px solid grey; */
-            height: auto;
-        }
-
-        #cartbar>div {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-        }
-
-        #cartbar>div>div:nth-child(1) {
-            width: 35%;
-            /* border: 1px solid red; */
-        }
-
-        #cartbar>div>div:nth-child(2) {
-            width: 25%;
-            /* border: 1px solid red; */
-            text-align: center;
-        }
-
-
-        .itemdiv {
-            display: flex;
-            align-items: center;
-            padding: 10px;
-
-        }
-
-        #paymentbar {
-            width: 35%;
-            border: 2px solid grey;
-            height: 500px;
-            padding: 20px;
-        }
-
-        .productImage {
-            width: 60%;
-        }
-
-        .remove {
-            margin-top: 15px;
-            border: none;
-            background-color:#363636 ;
-            color: white;
-            padding: 2px 5px;
-            border-radius: 3px;
-            font-size: 12px;
-        }
-        .remove:hover{
-            background-color:black;
-            cursor: pointer;
-        }
-
-        #upperdiv>input {
-            margin-bottom: 30px;
-            margin-top: 10px;
-            height: 30px;
-            border: 0.5px solid grey;
-            padding: 0px 10px;
-            border-radius: 3px;
-        }
-
-        #upperdiv>p {
-            font-size: medium;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        #upperdiv>button {
-            width: 100px;
-            height: 32px;
-            margin-left: 20px;
-            border: none;
-            background-color: rgb(0, 161, 224);
-            color: white;
-            border-radius: 3px;
-            font-size: large;
-        }
-
-        #upperdiv>button:hover {
-            background-color: #025394;
-            cursor: pointer;
-        }
-
-        #seconddiv {
-            margin-top: 30px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #seconddiv>div>p {
-            margin-bottom: 12px;
-        }
-
-        #seconddiv>div>h3 {
-            font-size: large;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        #seconddiv>div:nth-child(2)>p {
-            margin-right: 10px;
-
-            text-align: right;
-        }
-
-        #seconddiv>div:nth-child(2)>h3 {
-            margin-right: 10px;
-
-            text-align: right;
-        }
-
-        #thirddiv {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 15px;
-        }
-
-        #continuepayment {
-            width: 80%;
-            margin: auto;
-            margin-left: 10%;
-            margin-right: 10%;
-            margin-top: 40px;
-            height: 35px;
-            font-size: medium;
-            border: none;
-            background-color: #363636;
-            color: aliceblue;
-            border-radius: 3px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            border-color: #025394;
-        }
-        #continuepayment:hover{
-            background-color: black;
-            cursor: pointer;
-        }
-
-        #totalamount {
-            font-size: large;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        #totalamt {
-            font-size: large;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-right: 10px;
-
-            text-align: right;
-        }
-
-        #hr{
-            width: 80%;
-            margin: auto;
-            font-weight: bold;
-            margin-top: 40px;
-            font-size: 30px;
-            height: 1px;
-            background-color: #363636;
-
-        }
-
-        #footer{
-            width: 100%;
-            height: 500px;
-            border: 1px solid green;
-            margin-top: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="cartpage.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+    #homepage>li{
+        margin-left: 40px;
+        font-family: sans-serif;
+        color: blue
+    }
+   </style>
 </head>
 
 <body>
 
-    <div id="navbar">
-
-    </div>
-
-
+    <div id="navcontainer"></div>
+    <a  id="homepage" href="homepage.html"> <li>Home</li>
+    </a>
     <div id="motto">
         <p>Free product is to be added by the customer to avail offer</p>
     </div>
@@ -275,7 +66,7 @@
                 </div>
 
             </div>
-            <h4>.............................................................................................
+            <h4>............................................................................
             </h4>
             <div id="thirddiv">
 
@@ -293,150 +84,23 @@
     </div>
 <hr id="hr">
 
+  
+  <div id="footcontainer"></div>
 
-<div id="footer">
+
+    
 
 
-
-</div>
 </body>
 
 </html>
 
 
-
-
-
-<script>
-
-
-    let arr = JSON.parse(localStorage.getItem("cartItems"));
-    console.log(arr)
-
-let total_order=localStorage.getItem("order-amount")
-let sum = 0;
-
-    const display = (data) => {
-        sum=0;
-        let cart = document.querySelector("#cartbar");
-        cart.innerHTML = null;
-
-
-        data.forEach((el, index) => {
-            sum = sum + el.price
-
-            let card = document.createElement("div");
-
-            let itemdiv = document.createElement("div");
-            itemdiv.setAttribute("class", "itemdiv")
-            let photodiv = document.createElement("div")
-            let titlediv = document.createElement("div")
-            let pricediv = document.createElement("div");
-
-
-            let hr = document.createElement("hr")
-            let image = document.createElement("img");
-            image.src = el.image;
-            image.setAttribute("class", "productImage")
-
-
-
-            let title = document.createElement("h3");
-            title.innerText = el.title;
-            title.style.color = "#025394"
-
-            let total = document.createElement("h3");
-            total.innerText = "TOTAL"
-            total.style.color = "rgb(0,161,224)"
-
-            let price = document.createElement("h3");
-            price.innerText = "$ " + Number(el.price) + ".00";
-            let remove = document.createElement("button");
-            remove.innerText = "Remove";
-            remove.setAttribute("class", "remove")
-            remove.onclick = () => {
-                removeitem(data, index)
-            }
-
-            let instock = document.createElement("p");
-            instock.innerText = "In Stock";
-            instock.style.color = "green"
-
-            photodiv.append(image)
-            titlediv.append(title, instock, remove)
-
-
-            itemdiv.append(photodiv, titlediv)
-            pricediv.append(total, price)
-
-
-
-            card.append(itemdiv, pricediv);
-            cart.append(card, hr)
-        });
-        billing(sum)
-
-    }
-
-    display(arr)
+<script  type="module"  src="./navbar.js"></script>
+<script  type="module" src="./cartpage.js"></script>
 
 
 
 
-
-
-
-    function removeitem(data, index) {
-
-        let lsdata = data.filter(function (el, i) {
-            return i != index;
-        })
-
-        localStorage.setItem("cartItems", JSON.stringify(lsdata));
-        display(lsdata);
-
-
-
-
-    }
-
-
-
-    function billing(sum) {
-
-
-        let discount = Math.ceil((20 / 100) * sum)
-        console.log(discount)
-
-        let total_mrp = sum + discount;
-        let order_amount = total_mrp - discount;
-
-        //localStorage.setItem("orderAmount",JSON.stringify())
-
-
-
-        let totalmrp = document.querySelector("#totalmrp");
-        totalmrp.innerText = "$" + " " + total_mrp + ".00";
-
-
-        let dis = document.querySelector("#discount");
-        dis.innerText = "-" + " " + "$" + " " + discount + ".00";
-
-
-        let orderamount = document.querySelector("#orderamount");
-        orderamount.innerText = "$" + " " + order_amount + ".00";
-
-        let totalamount = document.querySelector("#totalamt");
-        totalamount.innerText = "$" + " " + order_amount + ".00";
-
-        localStorage.setItem("order-amount",order_amount)
-    }
-    billing(sum)
-
-let continuepayment=document.querySelector("#continuepayment");
-continuepayment.onclick=()=>{
-    window.location.replace("payment.html")
-}
 
    
-</script>
