@@ -6,10 +6,6 @@ nav_div.innerHTML=navbar();
 let foot_div=document.getElementById("footcontainer");
 foot_div.innerHTML=footer();
 
-
-
-
-
 let products = [
     {
         id:1,
@@ -120,10 +116,9 @@ let products = [
 ];
 
 
-let arr = JSON.parse(localStorage.getItem("cartItems"));
-console.log(arr)
- let cart_count=document.querySelector("#count");
- cart_count.innerText=arr.length;
+//let arr = JSON.parse(localStorage.getItem("cartItems"));
+// console.log(arr)
+ 
 
 const renderDom =  (datas) => {
 
@@ -133,6 +128,7 @@ let container = document.getElementById("productContainer");
     container.innerHTML = null;
 let data =JSON.parse(localStorage.getItem("cartItems")) || [];
     // console.log(container);
+    
     datas.forEach((el) => {
 
         let div = document.createElement("div");
@@ -166,11 +162,14 @@ let data =JSON.parse(localStorage.getItem("cartItems")) || [];
                     data.push(el);
                     localStorage.setItem("cartItems", JSON.stringify(data));
                     console.log(data);
+                    let cart_count=document.querySelector("#count");
+                        cart_count.innerText= data.length;
                 };
 
         div.append(img,title,type,price,rating,button);
         container.append(div);
-        console.log(el.id);
+        // console.log(el.id);
+
     });
 
     
