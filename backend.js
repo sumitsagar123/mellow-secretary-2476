@@ -23,17 +23,17 @@
 
 
 
-
+let  url="https://backend-imfz.onrender.com/inventory"
     
 
 
 
     let add_product_button=document.querySelector("#add_product");
-    add_product_button.onclick=()=>{
+    add_product_button.onclick=async()=>{
 
 
         let title=document.querySelector("#title").value
-        let price=document.querySelector("#price").value
+        let price=Number(document.querySelector("#price").value)
         let desc=document.querySelector("#desc").value
         let category=document.querySelector("#category").value
         let rating=document.querySelector("#rating").value
@@ -48,19 +48,56 @@
             image
         }
 
+
+try{
+
+let res= await fetch(url,{
+    method:"POST",
+    body:JSON.stringify(obj),
+    headers:{
+        "Content-Type":"application/json"
+    }
+})
+res=await res.json();
+console.log(res)
+
+}catch(error){
+alert("Bad Request")
+}
+
     }
 
 
 ///////////////////////////    UPDATING PRICE    ///////////////////////
 
     let update_price_button=document.querySelector("#update_price");
-    update_price_button.onclick=()=>{
+    update_price_button.onclick=async()=>{
 
-        let new_price=document.querySelector("#new_price").value;
+        let new_price=Number(document.querySelector("#new_price").value);
+        let id=document.querySelector("#product_id").value;
 
         let obj={
             price:new_price
         }
+
+
+
+        
+try{
+
+    let res= await fetch(`${url}/${id}`,{
+        method:"PATCH",
+        body:JSON.stringify(obj),
+        headers:{
+            "Content-Type":"application/json"
+        }
+    })
+    res=await res.json();
+    console.log(res)
+    
+    }catch(error){
+    alert("Bad Request")
+    }
 
     }
 
@@ -69,11 +106,22 @@
 ///////////////////////  DELETING PRODUCT  ///////////////////////////////
 
     let delete_product_button=document.querySelector("#delete_product");
-    delete_product_button.onclick=()=>{
+    delete_product_button.onclick=async()=>{
 
-let id=document.querySelector("#product_id").value;
-let obj={
-    id,
-}
+let id=Number(document.querySelector("#product_id2").value);
+
+console.log(id)
+try{
+
+    let res= await fetch(`${url}/${id}`,{
+        method:"DELETE",
+        
+    })
+    res=await res.json();
+    console.log(res)
+    
+    }catch(error){
+    alert("Bad Request")
+    }
 
     }
