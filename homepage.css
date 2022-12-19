@@ -1,0 +1,237 @@
+
+*{
+    margin: 0;padding: 0;
+}
+
+#nav2>.box1>.srch{
+    /* border: 1px solid black; */
+    margin-right: -110px;
+    align-items: center;
+}
+#nav2>.box1>.srch>p>#cart>i{
+    margin-top: -13px;
+    margin-bottom: -30px;
+}
+
+.txt1>p{
+    margin-left: 20px;
+    margin-top: 13px;
+}
+#nav2 #h{
+    font-size: 30px;
+}
+#nav1 a{
+    text-decoration-line: underline;
+    margin-left: 5px;
+}
+#nav1 ul{
+    margin-top: 13px;
+}
+
+#banner2>div {
+
+    grid-template-rows: repeat(1, auto);
+    border: 0px solid rgb(20, 20, 237);
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    margin: 20px;
+    background-color: white;
+    
+}
+
+#banner2 {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    margin-top: 40px;
+    cursor: pointer;
+    height: 70%;
+    border: 0px solid rgb(22, 153, 44);
+    
+}
+
+#banner2>div>button {
+    width: 80%;
+    color: white;
+    background-color: #333333;
+    height: 6vh;
+
+}
+
+#banner>div {
+    text-align: center;
+    border: 0px solid red;
+    width: 100%;
+    margin: auto;
+    background-color:
+        #f2f2f2;
+    margin-top: 10px;
+}
+
+#banner {
+    background-color:
+        #f2f2f2;
+    margin: auto;
+    width: 80%;
+    /* gap: 20px; */
+    margin-top: 40px;
+    cursor: pointer;
+    height: 45vh;
+    border: 0px solid red;
+
+}
+
+#staples>div {
+
+    grid-template-rows: repeat(1, auto);
+    border: 0px solid white;
+    height: auto;
+    width: auto;
+    margin-left: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#staples {
+    border: 0px solid white;
+    justify-content: center;
+    width: 80%;
+    display: flex;
+    margin-left: 145px;
+    margin-top: 40px;
+    cursor: pointer;
+
+}
+
+#staples>div>img {
+    width: 180px;
+}
+
+#protein {
+    border: 0px solid red;
+    width: 77%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#middle_section {
+    border: 0px solid red;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 400px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#middle_section div {
+    height: auto;
+    border: 0px solid black;
+    width: 40%;
+}
+
+#middle_section div>img {
+    width: auto;
+    border: 0px solid blue;
+    width: 100%;
+    height: 100%;
+}
+
+#below_middle_section {
+    border: 0px solid red;
+    height: 200px;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#below_middle_section img {
+    height: 100%;
+    width: 100%;
+}
+
+#front_banner {
+    border: 0px solid red;
+    width: 80%;
+    height: 90vh;
+    margin: auto;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+#front_banner img {
+    width: 100%;
+    height: 100%;
+}
+
+#grid_container {
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    display: grid;
+    border: 0px solid black;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+
+#grid_container>div {
+    text-align: center;
+    border: 0px solid red;
+    color: white;
+    background-color: #333333;
+    padding-top: 5px;
+}
+
+#grid_container2 {
+    width: 20%;
+    height: 40px;
+    margin: auto;
+    display: grid;
+    border: 0px solid black;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+
+#grid_container2>div {
+    text-align: center;
+    border: 0px solid red;
+    color: white;
+    background-color: #333333;
+    padding-top: 5px;
+}
+
+#banner2>div>button:hover,#grid_container>div:hover,#grid_container2>div:hover{
+    background-color: #f2f2f2;
+    color: black;
+    border: white;
+    cursor: pointer;
+}
+#staples>div>p>u:hover,#middle_section>div>p>u:hover{
+ text-decoration: none;
+ cursor: pointer;
+}
+
+#lastfoot{
+    padding: 20px;
+    /* border: 1px solid red; */
+    height: 200px;
+}
+#lastfoot p{
+    /* display: flex; */
+    text-align: center;
+    width: 30%;
+    display: flex;
+    margin: auto;
+    /* padding-top: 40px; */
+    padding-left: 100px;
+    color: rgb(124,173,218);
+    font-size: 6px;
+    border: 0px solid yellow;
+    margin-top: -10px
+
+};

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cartpage.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+    #homepage>li{
+        margin-left: 40px;
+        font-family: sans-serif;
+        color: blue
+    }
+   </style>
+</head>
+
+<body>
+
+    <div id="navcontainer"></div>
+    <a  id="homepage" href="homepage.html"> <li>Home</li>
+    </a>
+    <div id="motto">
+        <p>Free product is to be added by the customer to avail offer</p>
+    </div>
+
+
+    <div id="components">
+
+
+
+        <div id="cartbar"></div>
+
+
+
+
+        <div id="paymentbar">
+
+            <div id="upperdiv">
+                <p>Apply Coupons</p>
+                <input type="text" name="" id="" placeholder="Enter Coupon Code">
+                <button id="apply">Apply</button>
+
+                <p>SHIPING METHOD</p>
+                <input type="text" id="deliverydate" placeholder="Standard (Estimated Delivery">
+                <h3>ORDER DETAILS</h3>
+                <p>( Prices are inclusive of all taxes )</p>
+            </div>
+
+            <div id="seconddiv">
+
+                <div>
+                    <p>Total Mrp</p>
+                    <p>Shiiping Charges</p>
+                    <p>Order Dicount</p>
+                    <h3>Order Amount</h3>
+                </div>
+                <div>
+                    <p id="totalmrp"></p>
+                    <p>$ 0.00</p>
+                    <p id="discount"></p>
+                    <h3 id="orderamount"></h3>
+                </div>
+
+            </div>
+            <h4>............................................................................
+            </h4>
+            <div id="thirddiv">
+
+                <h2 id="totalamount">TOTAL AMOUNT</h2>
+                <h2 id="totalamt"></h2>
+
+            </div>
+
+            <button id="continuepayment">CONTINUE WITH PAYMENT</button>
+
+        </div>
+
+
+
+    </div>
+<hr id="hr">
+
+  
+  <div id="footcontainer"></div>
+
+
+    
+
+
+</body>
+
+</html>
+
+
+<script  type="module"  src="./navbar.js"></script>
+<script  type="module" src="./cartpage.js"></script>
+
+
+
+
+
+   
