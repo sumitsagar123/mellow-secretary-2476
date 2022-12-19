@@ -128,7 +128,8 @@ let container = document.getElementById("productContainer");
     container.innerHTML = null;
 let data =JSON.parse(localStorage.getItem("cartItems")) || [];
     // console.log(container);
-    
+    let cart_count=document.querySelector("#count");
+        cart_count.innerText= data.length;
     datas.forEach((el) => {
 
         let div = document.createElement("div");
