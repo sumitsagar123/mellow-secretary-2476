@@ -125,6 +125,7 @@ console.log(arr)
 
 const renderDom =  (datas) => {
 
+    
 // console.log('slider');
 let container = document.getElementById("productContainer");
     container.innerHTML = null;
