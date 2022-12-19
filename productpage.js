@@ -8,6 +8,8 @@ foot_div.innerHTML=footer();
 
 
 
+
+
 let products = [
     {
         id:1,
@@ -125,7 +127,7 @@ console.log(arr)
 
 const renderDom =  (datas) => {
 
-    
+
 // console.log('slider');
 let container = document.getElementById("productContainer");
     container.innerHTML = null;
