@@ -1,0 +1,79 @@
+*{
+    font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
+}
+body{
+    display: flex;
+}
+#lhsProduct{
+    border: 0px solid black;
+    min-width: 20%;
+}
+#rhsProduct{
+    border: 0px solid red;
+    width: 80%;
+}
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.sliderProduct{
+    max-width:100%;
+    position: relative;
+}
+
+.sliderProduct .carousel{
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    
+} 
+
+/* .sliderProduct .carousel::-webkit-scrollbar{
+    display: none;
+    color: gray;
+} */
+
+.carousel img{
+    height: 250px;
+    object-fit: cover;
+}
+.divs{
+    margin-left: 14px;
+}
+
+.carousel:first-child {
+    padding-left: 350px;
+}
+
+#productContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+    row-gap: 45px;
+}
+.productss{
+    text-align: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    height: 360px;
+    padding: 35px 0px 0px 0px;
+}
+.productss img{
+width: 50%;
+height: 50%;
+border: 0px solid palegreen;
+
+}
+
+#addtocart{
+background-color: #333333;
+color: rgb(227, 220, 220);
+height: 40px;
+width: 100%;
+cursor: pointer;
+}
